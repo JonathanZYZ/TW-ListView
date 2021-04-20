@@ -40,6 +40,10 @@ public class SecondActivity extends AppCompatActivity {
 
         if(text == 0){
             tvYear.setText("Year 1");
+
+            al.add(new Module(true,"C102"));
+            al.add(new Module(true,"C103"));
+            al.add(new Module(true,"C300"));
         }
         else if(text == 1){
             tvYear.setText("Year 2");
@@ -49,6 +53,10 @@ public class SecondActivity extends AppCompatActivity {
         }
         else if(text == 2){
             tvYear.setText("Year 3");
+
+            al.add(new Module(true,"C207"));
+            al.add(new Module(false,"C278"));
+            al.add(new Module(false,"C347"));
         }
 
         aa = new ModuleAdapter(this,R.layout.secondrow,al);
