@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TW-ListView</string>
+    <string name="ivProg">IV-PROG</string>
+    <string name="tvModules">Modules</string>
 </resources>
