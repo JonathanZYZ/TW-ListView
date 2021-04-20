@@ -10,17 +10,24 @@ import java.util.ArrayList;
 public class FirstActivity extends AppCompatActivity {
 
     ListView lv;
-    ArrayList<String> al;
-    ArrayAdapter<String> aa;
+    ArrayList<Year> al;
+    ArrayAdapter<Year> aa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        lv = this.findViewById(R.id.LvYear);
 
-        al = new ArrayList<String>();
-        al.add("Year 1");
+        al = new ArrayList<Year>();
+        al.add(new Year("Year 1"));
+        al.add(new Year("Year 2"));
+        al.add(new Year("Year 3"));
+
+
+        aa = new YearAdapter(this,R.layout.firstrow,al);
+        lv.setAdapter(aa);
 
 
 
